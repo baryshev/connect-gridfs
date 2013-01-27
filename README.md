@@ -2,13 +2,32 @@
 
 [GridFS](http://www.mongodb.org/display/DOCS/GridFS) file server for Connect.
 
-# Installation
+## Installation
 
 	npm install connect-gridfs
 
-#
+## Options
 
-# Usage
+  - `db` — previously opened MongoDB Db instance
+  - `gzip` — `object` with gzip compression settings or `true` for default gzip settings, defaulting to `false` (gzipping disable)
+
+### gzip options
+
+[Native gzip options](http://zlib.net/manual.html#Advanced):
+
+  - `chunkSize`
+  - `windowBits`
+  - `level`
+  - `memLevel`
+  - `strategy`
+  - `dictionary`
+
+Additional gzip options:
+
+  - `minLength` — sets the minimum length of a response that will be gzipped, all responses gzipping by default
+  - `mimeTypes` — enables gzipping of responses for the specified MIME types, all responses gzipping by default
+
+## Example
 
 ```js
 var http = require('http');
