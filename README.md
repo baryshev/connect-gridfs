@@ -40,7 +40,7 @@ var server = http.createServer(app);
 
 var db = new mongodb.Db('test', new mongodb.Server('127.0.0.1', 27017, { auto_reconnect: true }), { w: 1 });
 db.open(function(err) {
-	app.use('/public/', connectGridfs({ db : db }));
+	app.use('/public/', connectGridfs({ db : db, gzip : { level : 4, minLength : 1024 * 16, mimeTypes : ['text/css', 'text/html', 'application/x-javascript'] } }));
 	server.listen(3000);
 });
 ```
