@@ -1,0 +1,16 @@
+{
+	"name" : "connect-gridfs",
+	"version" : "0.0.1",
+	"description" : "GridFS file server for Connect",
+	"keywords": [ "connect", "static", "gridfs" ],
+	"author" : "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
+	"main" : "index",
+	"dependencies": {
+		"mongodb": ">= 1.2.10"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/baryshev/connect-gridfs.git"
+	},
+	"engines" : { "node": ">= 0.8.0" }
+}
