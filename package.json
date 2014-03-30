@@ -1,6 +1,6 @@
 {
 	"name" : "connect-gridfs",
-	"version" : "0.0.2",
+	"version" : "0.0.3",
 	"description" : "GridFS file server for Connect",
 	"keywords": [ "connect", "static", "gridfs" ],
 	"author" : "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
